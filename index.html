@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Проверка правильности пароля в Javascript | Переключатель Показать Скрыть пароль</title>
+    </head>
+
+    <body>
+        
+        <div class="box">
+            <div class="inputBox">
+                <input type="password" id="pswrd" placeholder="Пароль" onkeyup="checkPassword(this.value)">
+                <span id="toggleBtn"></span>
+            </div>
+            <div class="validation">
+                <h2>Пароль должен состоять:</h2>
+                <ul>
+                    <li id="lower">Один строчный символ</li>
+                    <li id="upper">Один заглавный символ</li>
+                    <li id="number">Одна цыфра</li>
+                    <li id="special">Один специальный символ</li>
+                    <li id="length">Не менее 8 символов</li>
+                </ul>
+            </div>
+        </div>
+
+
+        
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="./js/script.js"></script>
+       
+    </body>
+</html>
